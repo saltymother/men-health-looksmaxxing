@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEN HEALTH AND LOOKSMAXXING - The Ultimate Aesthetic Ascension Protocol</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Comprehensive men's health and looksmaxxing blueprint covering hair, skin, nails, teeth, jawline, nutrition, harmful chemical avoidance, and interactive 3D animated penguin grooming tutorials.">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP NAVBAR (Brand at Top Left, Guy Pic at Top Right)
+       ========================================================================== -->
+  <header class="top-navbar">
+    <div class="nav-container">
+      
+      <!-- Top Left Corner Title -->
+      <a href="#" class="nav-brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+          <h1>MEN HEALTH AND LOOKSMAXXING</h1>
+          <span class="brand-badge">AESTHETIC ASCENSION PROTOCOL</span>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#section-hair"><span class="nav-num">1</span> Hair</a></li>
+          <li><a href="#section-skin"><span class="nav-num">2</span> Skin</a></li>
+          <li><a href="#section-nails"><span class="nav-num">3</span> Nails</a></li>
+          <li><a href="#section-teeth"><span class="nav-num">4</span> Teeth</a></li>
+          <li><a href="#section-jawline"><span class="nav-num">5</span> More</a></li>
+          <li><a href="#mascot-stage"><span class="nav-num">🐧</span> 3D Mascot</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions & Guy Pic on Top Right -->
+      <div class="nav-actions">
+        <!-- Sound Toggle -->
+        <button id="toggle-sound-btn" class="icon-btn" title="Toggle Grooming Sounds">🔊</button>
+
+        <!-- Guy's Picture on Top Right -->
+        <div class="user-profile-header" title="Aesthetic Standard & Profile">
+          <div class="user-avatar-wrap">
+            <img src="assets/user_photo.jpg" alt="Aesthetic Standard" class="user-avatar-img">
+            <span class="user-status-dot"></span>
+          </div>
+          <div class="user-info-text">
+            <span class="user-name">Target Aesthetic <span class="user-tier-pill" id="user-nav-tier">Chadlite</span></span>
+            <span class="user-streak">🔥 Daily Streak: Day 28</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO / DASHBOARD SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-card">
+      <div class="hero-content">
+        <div class="hero-tag">🧬 The Scientific Male Beauty Blueprint</div>
+        <h2 class="hero-title">
+          Master Your Health & <br>
+          <span class="gradient-text">Max Your Natural Aesthetics</span>
+        </h2>
+        <p class="hero-subtitle">
+          From scientific scalp blood flow and sulfate-free hair washing to barrier-repair skincare, crystal glass nail sealing, and craniofacial mewing architecture. Track your daily habits with interactive checklists and learn step-by-step with <strong>Pip the 3D Grooming Penguin</strong>!
+        </p>
+
+        <!-- Master Overall Looksmaxxing Progress Bar -->
+        <div class="master-progress-card">
+          <div class="progress-header">
+            <span class="progress-label"><span>⚡</span> Overall Looksmaxxing Ascension Score</span>
+            <span class="progress-percent" id="master-progress-percent">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="master-progress-fill"></div>
+          </div>
+          <div class="progress-stats-row">
+            <span>Daily Routine Completion</span>
+            <span>Target: 100% Top Tier</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats Grid -->
+      <div class="hero-stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">Norwood 0</div>
+          <div class="stat-label">Hairline Preservation</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">SPF 50+</div>
+          <div class="stat-label">Anti-Aging Barrier</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">120°</div>
+          <div class="stat-label">Gonial Angle Target</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Non-Toxic Formula</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3D ANIMATED PENGUIN MASCOT MASTERCLASS STAGE
+       ========================================================================== -->
+  <section class="mascot-stage-container" id="mascot-stage">
+    <div class="mascot-banner">
+      <div class="mascot-header">
+        <div class="mascot-title-wrap">
+          <h2>🐧 Pip's 3D Interactive Grooming Masterclass</h2>
+          <span class="badge-pulse">Interactive 3D Demo</span>
+        </div>
+      </div>
+
+      <div class="mascot-interactive-grid">
+        <!-- 3D Canvas Viewport -->
+        <div class="penguin-viewport-card">
+          <canvas id="penguin-canvas"></canvas>
+
+          <div class="viewport-overlay-controls">
+            <div class="penguin-status-pill" id="penguin-status-pill">
+              <span>🐧</span> Mascot Mode: Ready & Focused
+            </div>
+            <div class="viewport-btn-group">
+              <button class="viewport-btn" id="btn-rot-left" title="Rotate Left">⟲ Left</button>
+              <button class="viewport-btn" id="btn-rot-reset" title="Reset View">Reset</button>
+              <button class="viewport-btn" id="btn-rot-right" title="Rotate Right">Right ⟳</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls & Speech Area -->
+        <div class="mascot-controller">
+          <div class="mascot-speech-bubble">
+            <div class="mascot-name-tag" id="mascot-tag">🐧 PIP THE GROOMING SENSEI</div>
+            <div class="mascot-speech-text" id="mascot-text">
+              "Hey brother! Looking aesthetic is 80% discipline and 20% technique. Click the interactive action buttons below to watch me physically demonstrate how to lather shampoo without ruining your scalp, pat skincare creams, file nails, and master mewing posture!"
+            </div>
+          </div>
+
+          <div class="mascot-actions-title">Choose A Live Demonstration:</div>
+          <div class="action-buttons-grid">
+            <button class="penguin-action-btn active" data-action="shampoo">
+              <span class="btn-emoji">🫧</span>
+              <div class="btn-text-wrap">
+                <span class="btn-title">How To Apply Shampoo</span>
+                <span class="btn-subtitle">Shower cap, foam & fingertip circles</span>
+              </div>
+            </button>
+
+            <button class="penguin-action-btn" data-action="skin">
+              <span class="btn-emoji">🧴</span>
+              <div class="btn-text-wrap">
+                <span class="btn-title">How To Apply Skincare</span>
+                <span class="btn-subtitle">Gentle patting, serum drops & glow</span>
+              </div>
+            </button>
+
+            <button class="penguin-action-btn" data-action="nail">
+              <span class="btn-emoji">💅</span>
+              <div class="btn-text-wrap">
+                <span class="btn-title">Precision Nail Grooming</span>
+                <span class="btn-subtitle">Glass file, one-direction buff & oil</span>
+              </div>
+            </button>
+
+            <button class="penguin-action-btn" data-action="teeth">
+              <span class="btn-emoji">🪥</span>
+              <div class="btn-text-wrap">
+                <span class="btn-title">Teeth & Mewing Posture</span>
+                <span class="btn-subtitle">45° brush angle & palatal tongue hold</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: HAIR (Complete Guide as Requested)
+       ========================================================================== -->
+  <section class="looks-section" id="section-hair">
+    <div class="section-badge-header">
+      <div class="section-num-tag"><span>01</span> SEGMENT: HAIR HEALTH & FOLLICLE RESTORATION</div>
+      <h2 class="section-main-title">The Complete Men's Hair Masterclass</h2>
+      <p class="section-desc">
+        Everything you need to know about hair follicle biology, proper shampooing and conditioning steps, hair types, growth nutrition, serums, comb selection, toxic chemicals to avoid, and protection from dust.
+      </p>
+    </div>
+
+    <!-- 3D Anime Style Pictorial Infographic Card (Hair) -->
+    <div class="pictorial-hero-card">
+      <div class="pictorial-image-wrap zoomable-img-trigger" data-img-src="assets/hair_guide.jpg" title="Click to expand pictorial infographic">
+        <img src="assets/hair_guide.jpg" alt="3D Anime Style Pictorial Infographic of Men Hair Care Routine">
+        <div class="pictorial-badge-overlay">
+          <span>🎨</span> 3D Anime Pictorial Guide: Step-by-Step Hair Routine & Types
+        </div>
+        <div class="pictorial-zoom-prompt">
+          <span>🔍</span> Click to Enlarge
+        </div>
+      </div>
+      <div class="pictorial-footer">
+        <span class="pictorial-caption">Pictorial Infographic: Wash & Cleanse • Scalp Massage • Wooden Neem Comb Detangling • Straight, Wavy, Curly & Coily Profiles</span>
+        <button class="icon-btn zoomable-img-trigger" data-img-src="assets/hair_guide.jpg" title="Zoom">🔍</button>
+      </div>
+    </div>
+
+    <!-- Bento Grid: Step-by-Step Basics & Rules -->
+    <div class="bento-grid">
+      
+      <!-- Step-by-Step Routine -->
+      <div class="looks-card card-span-7">
+        <div class="card-header-styled">
+          <div class="card-header-icon">🚿</div>
+          <div>
+            <h3 class="card-header-title">Step-by-Step: How to Wash & Care for Your Hair</h3>
+            <span class="card-subtitle">Master the exact mechanical and biological steps</span>
+          </div>
+        </div>
+
+        <div class="step-cards-list">
+          
+          <div class="step-item-card">
+            <div class="step-badge-num">1</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Lukewarm Water Saturation</h4>
+                <span class="step-tag-pill">2-3 Mins</span>
+              </div>
+              <p class="step-desc">
+                Soak hair completely with lukewarm water. Never use scalding hot water as it strips natural sebum lipids and irritates hair follicles. Lukewarm water opens the hair cuticles so dirt and excess sebum can be lifted.
+              </p>
+              <div class="step-tip-callout">
+                <span>💡</span> <strong>Pro Tip:</strong> Ensure the scalp is drenched for at least 60 seconds before applying any product.
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">2</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">How to Apply Shampoo (Scalp Only!)</h4>
+                <span class="step-tag-pill">Fingertip Pads Only</span>
+              </div>
+              <p class="step-desc">
+                Dispense a quarter-sized amount into palms and <strong>emulsify with water first</strong>. Apply directly to your scalp and roots only—never pile hair onto the crown. Use the fleshy <strong>pads of your fingers</strong> in slow, circular motions to massage the scalp.
+              </p>
+              <div class="step-warning-callout">
+                <span>⚠️</span> <strong>CRITICAL MISTAKE:</strong> NEVER scratch your scalp with fingernails. This causes micro-abrasions, fungal infection, and follicle scarring.
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">3</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Rinse & Cascade</h4>
+                <span class="step-tag-pill">Self-Cleaning Lengths</span>
+              </div>
+              <p class="step-desc">
+                As you rinse the shampoo with water, the suds will naturally cascade down the hair strands, cleaning them without stripping their natural moisture. You do not need to scrub the ends.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">4</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Conditioner (Mid-Lengths to Ends Only)</h4>
+                <span class="step-tag-pill">Cold Water Finish</span>
+              </div>
+              <p class="step-desc">
+                Squeeze excess water out first. Apply silicone-free conditioner from the mid-shaft down to the tips. <strong>Never apply conditioner to the scalp</strong> as it clogs pores. Leave on for 2–3 minutes, then rinse with cool/cold water to seal the cuticles for high gloss.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">5</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">How to Dry: Pat & Press (No Rubbing!)</h4>
+                <span class="step-tag-pill">100% Cotton / Microfiber</span>
+              </div>
+              <p class="step-desc">
+                Wet hair is in its most fragile state (hydrogen bonds are temporarily broken). Ditch the harsh terrycloth towel. Gently press and squeeze moisture using a soft microfiber towel or clean 100% cotton t-shirt.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">6</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">How to Comb Correctly</h4>
+                <span class="step-tag-pill">Bottom-to-Top</span>
+              </div>
+              <p class="step-desc">
+                Apply a dime of leave-in serum or argan oil. Use a <strong>Wide-Tooth Wooden Neem Comb</strong>. Always start detangling from the ends and gently work your way upward toward the roots. Never rip downwards from the scalp!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Hair Types & Interactive Checklist -->
+      <div class="card-span-5" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Interactive Hair Checklist -->
+        <div class="checklist-wrapper">
+          <div class="checklist-header">
+            <div class="checklist-title-wrap">
+              <span>📋</span>
+              <h3>Hair Health Daily Checklist</h3>
+            </div>
+            <span class="checklist-badge">Lush Hair Protocol</span>
+          </div>
+
+          <!-- Section Progress -->
+          <div class="section-progress-container">
+            <div class="section-progress-track">
+              <div class="section-progress-fill" id="hair-progress-fill"></div>
+            </div>
+            <div class="section-progress-label">
+              <span>Progress Tracker</span>
+              <span id="hair-progress-label">0% Completed (0/7)</span>
+            </div>
+          </div>
+
+          <!-- Checklist Items -->
+          <div class="checklist-items-list" id="hair-checklist-container">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+        <!-- Environmental Protection & Dust Defense -->
+        <div class="looks-card">
+          <div class="card-header-styled">
+            <div class="card-header-icon">🛡️</div>
+            <div>
+              <h3 class="card-header-title">How to Protect Hair From Dust & Pollution</h3>
+              <span class="card-subtitle">Shielding follicles in outdoor environments</span>
+            </div>
+          </div>
+          <div class="dust-protection-box">
+            <div class="dust-item">
+              <span>🧢</span>
+              <div><strong>Silk-Lined Bandana or Cap:</strong> When riding bikes, walking in construction, or in heavy dust, wear a breathable cap with a silk/satin inner lining to eliminate mechanical friction.</div>
+            </div>
+            <div class="dust-item">
+              <span>🚿</span>
+              <div><strong>Shower Head Filter:</strong> Hard water contains chlorine and heavy calcium salts that calcify follicles. An active carbon shower filter keeps water pure.</div>
+            </div>
+            <div class="dust-item">
+              <span>💧</span>
+              <div><strong>Post-Dust Clarifying Rinse:</strong> After exposure to extreme dust, rinse scalp thoroughly with water and apply 2 drops of jojoba oil to replenish stripped lipids.</div>
+            </div>
+            <div class="dust-item">
+              <span>🛏️</span>
+              <div><strong>Silk Pillowcase Hygiene:</strong> Cotton absorbs hair moisture and traps dust mites. Switch to 22-Momme Mulberry silk and wash it every 4 days.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Men's Hair Types Breakdown -->
+    <div class="looks-card" style="margin-bottom: 2rem;">
+      <div class="card-header-styled">
+        <div class="card-header-icon">🧬</div>
+        <div>
+          <h3 class="card-header-title">How Many Types of Men's Hair? The Complete Classification</h3>
+          <span class="card-subtitle">Know your exact hair type to select the right styling, shampoo frequency, and moisture level</span>
+        </div>
+      </div>
+
+      <div class="hair-types-grid">
+        <div class="hair-type-box">
+          <div class="type-indicator-visual">💈</div>
+          <div class="type-name">Type 1: Straight</div>
+          <div class="type-sub">1A (Fine) • 1B (Medium) • 1C (Coarse)</div>
+          <ul class="type-traits">
+            <li>• Sebum travels quickly from scalp to tip; gets oily fastest.</li>
+            <li>• Wash frequency: Every 1–2 days with lightweight shampoo.</li>
+            <li>• Best products: Volumizing sea salt spray, lightweight clay. Avoid heavy oils.</li>
+          </ul>
+        </div>
+
+        <div class="hair-type-box">
+          <div class="type-indicator-visual">🌊</div>
+          <div class="type-name">Type 2: Wavy</div>
+          <div class="type-sub">2A (Loose) • 2B (Defined S) • 2C (Strong Wave)</div>
+          <ul class="type-traits">
+            <li>• Subtle curl pattern, natural volume, prone to humidity frizz.</li>
+            <li>• Wash frequency: Every 2–3 days.</li>
+            <li>• Best products: Matte styling paste, hydrating leave-in conditioner, diffuser blow drying.</li>
+          </ul>
+        </div>
+
+        <div class="hair-type-box">
+          <div class="type-indicator-visual">🌀</div>
+          <div class="type-name">Type 3: Curly</div>
+          <div class="type-sub">3A (Loose Spiral) • 3B (Corkscrew) • 3C (Tight Ringlets)</div>
+          <ul class="type-traits">
+            <li>• Definite loops and spirals. Cuticles are naturally more open.</li>
+            <li>• Wash frequency: 1–2 times per week. High moisture needed.</li>
+            <li>• Best products: Curl defining creams, argan oil, sulfate-free co-wash.</li>
+          </ul>
+        </div>
+
+        <div class="hair-type-box">
+          <div class="type-indicator-visual">👑</div>
+          <div class="type-name">Type 4: Coily / Afro</div>
+          <div class="type-sub">4A (Soft Coils) • 4B (Z-Pattern) • 4C (Dense Zig-Zag)</div>
+          <ul class="type-traits">
+            <li>• Tightest curl pattern, highest porosity, most vulnerable to drying.</li>
+            <li>• Wash frequency: Once every 7–10 days. Deep conditioning weekly.</li>
+            <li>• Best products: Shea butter, Jamaican black castor oil, LOC method (Liquid, Oil, Cream).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nutrients & Superfoods for Hair Growth -->
+    <div class="looks-card" style="margin-bottom: 2rem;">
+      <div class="card-header-styled">
+        <div class="card-header-icon">🥗</div>
+        <div>
+          <h3 class="card-header-title">Which Nutrients & Foods Are Required for Maximum Hair Growth?</h3>
+          <span class="card-subtitle">Feed the dermal papilla from within for thick, lush terminal hair</span>
+        </div>
+      </div>
+
+      <div class="nutrients-food-grid">
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🍳</span>
+            <span class="nutrient-badge">Biotin & Keratin</span>
+          </div>
+          <div class="nutrient-title">Pasture-Raised Eggs</div>
+          <div class="nutrient-effect">Eggs provide pure bioavailable choline and biotin (Vitamin B7), essential for keratin protein synthesis.</div>
+          <div class="nutrient-sources">Target: 3-4 whole eggs daily</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🐟</span>
+            <span class="nutrient-badge">Omega-3 & Vitamin D3</span>
+          </div>
+          <div class="nutrient-title">Wild Alaskan Salmon</div>
+          <div class="nutrient-effect">Rich in EPA/DHA fatty acids that reduce follicular inflammation and nourish the scalp sebaceous glands.</div>
+          <div class="nutrient-sources">Target: 2-3 servings per week</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🎃</span>
+            <span class="nutrient-badge">Zinc & Phytosterols</span>
+          </div>
+          <div class="nutrient-title">Raw Pumpkin Seeds</div>
+          <div class="nutrient-effect">High in Zinc and delta-7-sterols which clinically suppress 5-alpha-reductase (the enzyme converting T into DHT).</div>
+          <div class="nutrient-sources">Target: 30g daily snack</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🥬</span>
+            <span class="nutrient-badge">Iron & Folate</span>
+          </div>
+          <div class="nutrient-title">Baby Spinach & Kale</div>
+          <div class="nutrient-effect">Loaded with plant iron and folate, ensuring maximum oxygen-carrying red blood cells reach follicle roots.</div>
+          <div class="nutrient-sources">Target: 1 large bowl daily</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🥑</span>
+            <span class="nutrient-badge">Vitamin E & Healthy Lipids</span>
+          </div>
+          <div class="nutrient-title">Fresh Avocados</div>
+          <div class="nutrient-effect">Potent lipid-soluble antioxidant that shields scalp cells from oxidative stress and lipid peroxidation.</div>
+          <div class="nutrient-sources">Target: 1/2 to 1 avocado daily</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🥣</span>
+            <span class="nutrient-badge">Collagen Peptides</span>
+          </div>
+          <div class="nutrient-title">Simmered Bone Broth</div>
+          <div class="nutrient-effect">Supplies glycine, proline, and hydroxyproline—the direct amino acid building blocks for strong hair shafts.</div>
+          <div class="nutrient-sources">Target: 1 warm mug daily</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🫐</span>
+            <span class="nutrient-badge">Polyphenols & Vitamin C</span>
+          </div>
+          <div class="nutrient-title">Wild Blueberries</div>
+          <div class="nutrient-effect">Anthocyanins protect microcapillaries supplying blood to the scalp and boost internal collagen synthesis.</div>
+          <div class="nutrient-sources">Target: 1 cup daily</div>
+        </div>
+
+        <div class="nutrient-card">
+          <div class="nutrient-icon-header">
+            <span class="food-emoji">🥜</span>
+            <span class="nutrient-badge">Selenium & Copper</span>
+          </div>
+          <div class="nutrient-title">Walnuts & Brazil Nuts</div>
+          <div class="nutrient-effect">Copper maintains natural hair pigmentation (prevents premature graying); selenium balances thyroid function.</div>
+          <div class="nutrient-sources">Target: 1 Brazil nut + handful walnuts</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Guide: Serums, Shampoos, Conditioners & Comb Types -->
+    <div class="bento-grid">
+      <div class="looks-card card-span-6">
+        <div class="card-header-styled">
+          <div class="card-header-icon">🧪</div>
+          <div>
+            <h3 class="card-header-title">Serums, Shampoos & Conditioners</h3>
+            <span class="card-subtitle">The gold standard arsenal for hair preservation</span>
+          </div>
+        </div>
+        <div class="product-guide-grid">
+          <div class="product-item">
+            <div class="product-icon">🌿</div>
+            <div class="product-info">
+              <h4>Rosemary Oil (Diluted 2%)</h4>
+              <p>Clinically proven to match 2% Minoxidil for follicle microcirculation without scalp itching.</p>
+              <span class="product-frequency">Apply 3x/week before bed</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">🧴</div>
+            <div class="product-info">
+              <h4>Ketoconazole 2% Shampoo (Nizoral)</h4>
+              <p>Topical anti-androgen that binds to scalp DHT receptors and wipes out Malassezia dandruff yeast.</p>
+              <span class="product-frequency">Use 1–2x per week</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">🫧</div>
+            <div class="product-info">
+              <h4>Sulfate-Free Gentle Shampoo</h4>
+              <p>Uses mild coconut-derived surfactants (Decyl Glucoside) to cleanse without stripping natural lipids.</p>
+              <span class="product-frequency">Daily or every other day</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">💧</div>
+            <div class="product-info">
+              <h4>Cold-Pressed Argan Leave-in Oil</h4>
+              <p>Rich in squalene and vitamin E. Coats the cuticle sheath to eliminate frizz and reflect light.</p>
+              <span class="product-frequency">2 drops on damp ends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="looks-card card-span-6">
+        <div class="card-header-styled">
+          <div class="card-header-icon">🪵</div>
+          <div>
+            <h3 class="card-header-title">Which Comb & Tool Types Should You Use?</h3>
+            <span class="card-subtitle">Prevent static, stimulate scalp, and distribute sebum</span>
+          </div>
+        </div>
+        <div class="product-guide-grid">
+          <div class="product-item">
+            <div class="product-icon">🪮</div>
+            <div class="product-info">
+              <h4>Wide-Tooth Wooden Neem Comb</h4>
+              <p>Zero static electricity! Broad gaps glide through wet tangles without ripping hair out. Neem wood has natural antibacterial properties.</p>
+              <span class="product-frequency">Primary daily detangler</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">🐗</div>
+            <div class="product-info">
+              <h4>Pure Boar Bristle Brush</h4>
+              <p>Microscopic scales on boar hair pick up natural sebum from the scalp and sweep it down to dry ends, giving organic shine.</p>
+              <span class="product-frequency">Use on dry hair at night</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">💆‍♂️</div>
+            <div class="product-info">
+              <h4>Silicone Scalp Massager Brush</h4>
+              <p>Soft silicone cones stimulate blood flow to dermal papilla cells while gently lifting dead skin flakes during shampooing.</p>
+              <span class="product-frequency">Use during shampoo lather</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">⚙️</div>
+            <div class="product-info">
+              <h4>0.5mm Titanium Dermaroller</h4>
+              <p>Microneedling induces local collagen synthesis and growth factor release (VEGF & Wnt/β-catenin signaling).</p>
+              <span class="product-frequency">Once every 7 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toxic Chemicals to Avoid -->
+    <div class="looks-card">
+      <div class="card-header-styled">
+        <div class="card-header-icon">☠️</div>
+        <div>
+          <h3 class="card-header-title">Harmful Chemicals Men Should Avoid in Hair Products</h3>
+          <span class="card-subtitle">Check your ingredient bottles immediately and discard these silent killers</span>
+        </div>
+      </div>
+      <div class="avoid-chemicals-grid">
+        <div class="chemical-bad-card">
+          <div class="chemical-bad-title"><span>🚫</span> Sulfates (SLS & SLES)</div>
+          <div class="chemical-bad-desc">Industrial detergents used in dish soap. They aggressively strip the scalp's protective moisture barrier, leading to reactive rebound greasiness and hair thinning.</div>
+        </div>
+
+        <div class="chemical-bad-card">
+          <div class="chemical-bad-title"><span>🚫</span> Parabens (Methyl / Propyl)</div>
+          <div class="chemical-bad-desc">Synthetic preservatives that act as xenoestrogens in the bloodstream, disrupting healthy male hormone profiles and irritating follicles.</div>
+        </div>
+
+        <div class="chemical-bad-card">
+          <div class="chemical-bad-title"><span>🚫</span> Insoluble Silicones (Dimethicone)</div>
+          <div class="chemical-bad-desc">Creates a fake shiny plastic wrap over hair strands that prevents actual moisture from entering, causing hair to suffocate and snap over time.</div>
+        </div>
+
+        <div class="chemical-bad-card">
+          <div class="chemical-bad-title"><span>🚫</span> Phthalates & Synthetic Fragrance</div>
+          <div class="chemical-bad-desc">Hidden umbrella terms that harbor hundreds of unlisted petrochemical toxins that cause allergic contact dermatitis and follicular inflammation.</div>
+        </div>
+
+        <div class="chemical-bad-card">
+          <div class="chemical-bad-title"><span>🚫</span> Formaldehyde Releasers (DMDM)</div>
+          <div class="chemical-bad-desc">DMDM Hydantoin and Imidazolidinyl urea slowly release formaldehyde gas to extend shelf life, linked directly to acute hair shedding lawsuits.</div>
+        </div>
+
+        <div class="chemical-bad-card">
+          <div class="chemical-bad-title"><span>🚫</span> Denatured / Isopropyl Alcohol</div>
+          <div class="chemical-bad-desc">Short-chain drying alcohols commonly found in cheap hair sprays and gels that evaporate quickly by drawing out all natural moisture from the hair cortex.</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: SKIN (Complete Skincare Routine & Guide)
+       ========================================================================== -->
+  <section class="looks-section" id="section-skin">
+    <div class="section-badge-header">
+      <div class="section-num-tag"><span>02</span> SEGMENT: CLEAR GLASS SKIN & BARRIER DEFENSE</div>
+      <h2 class="section-main-title">The Complete Men's Skincare Masterclass</h2>
+      <p class="section-desc">
+        Achieve glowing, acne-free, chiseled facial skin with AM/PM active protocols, ice rolling for jawline depuffing, broad-spectrum sunscreen, and harmful chemical elimination.
+      </p>
+    </div>
+
+    <!-- 3D Anime Style Pictorial Infographic Card (Skin) -->
+    <div class="pictorial-hero-card">
+      <div class="pictorial-image-wrap zoomable-img-trigger" data-img-src="assets/skin_guide.jpg" title="Click to expand pictorial infographic">
+        <img src="assets/skin_guide.jpg" alt="3D Anime Style Pictorial Infographic of Men Skincare Routine">
+        <div class="pictorial-badge-overlay">
+          <span>🎨</span> 3D Anime Pictorial Guide: Cleanser • Vitamin C • Moisturizer • SPF 50+ • Ice Roller
+        </div>
+        <div class="pictorial-zoom-prompt">
+          <span>🔍</span> Click to Enlarge
+        </div>
+      </div>
+      <div class="pictorial-footer">
+        <span class="pictorial-caption">Pictorial Infographic: Step 1 Foam Cleanser • Step 2 Vitamin C Serum • Step 3 Hydrating Moisturizer • Step 4 Sunscreen SPF • Step 5 Ice Roller Jawline Depuffing</span>
+        <button class="icon-btn zoomable-img-trigger" data-img-src="assets/skin_guide.jpg" title="Zoom">🔍</button>
+      </div>
+    </div>
+
+    <div class="bento-grid">
+      <!-- AM & PM Step by Step Skincare -->
+      <div class="looks-card card-span-7">
+        <div class="card-header-styled">
+          <div class="card-header-icon">✨</div>
+          <div>
+            <h3 class="card-header-title">The AM & PM Protocol for Men's Glass Skin</h3>
+            <span class="card-subtitle">Minimalist, high-potency active ingredient regimen</span>
+          </div>
+        </div>
+
+        <div class="step-cards-list">
+          <div class="step-item-card">
+            <div class="step-badge-num">1</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">AM Step 1: Gentle pH 5.5 Foaming Cleanser</h4>
+                <span class="step-tag-pill">60-Second Rule</span>
+              </div>
+              <p class="step-desc">
+                Wash with lukewarm water and a gentle foaming cleanser containing green tea or centella asiatica. Massage for 60 seconds to break down overnight sweat without stripping ceramides.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">2</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">AM Step 2: 15% Vitamin C (L-Ascorbic Acid) + Ferulic</h4>
+                <span class="step-tag-pill">Antioxidant Shield</span>
+              </div>
+              <p class="step-desc">
+                Apply 4–5 drops onto clean, dry skin. Vitamin C scavenges free radicals generated by sunlight and pollution, fades dark acne spots, and doubles the efficacy of your sunscreen.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">3</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">AM Step 3: Lightweight Gel-Cream Moisturizer</h4>
+                <span class="step-tag-pill">Ceramides + Hyaluronic</span>
+              </div>
+              <p class="step-desc">
+                Pat in a lightweight moisturizer with ceramides, squalane, and multi-molecular hyaluronic acid to hydrate the dermis without clogging pores.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">4</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">AM Step 4: Broad-Spectrum SPF 50+ PA++++ (NON-NEGOTIABLE)</h4>
+                <span class="step-tag-pill">Anti-Aging King</span>
+              </div>
+              <p class="step-desc">
+                90% of facial wrinkles, hyperpigmentation, and collagen loss come from daily UV radiation. Apply 2 full finger lengths across face, ears, and neck every morning.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">5</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">AM Step 5: Ice Roller / Stainless Steel Gua Sha</h4>
+                <span class="step-tag-pill">Mandibular Chisel</span>
+              </div>
+              <p class="step-desc">
+                Roll upwards from chin to ear along the jawline for 3 minutes. Flushes pooled lymphatic fluid, instantly reducing morning face puffiness and sharpening the gonial angle.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">6</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">PM Protocol: Retinoid 0.05% + Deep Barrier Repair</h4>
+                <span class="step-tag-pill">Night Cellular Renewal</span>
+              </div>
+              <p class="step-desc">
+                Cleanse thoroughly. 2-3 nights per week, apply a pea-sized amount of retinol or adapalene to turn over dead skin cells and clear micro-comedones, followed by rich ceramide cream.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skin Checklist & Harmful Skincare Ingredients -->
+      <div class="card-span-5" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Interactive Skin Checklist -->
+        <div class="checklist-wrapper">
+          <div class="checklist-header">
+            <div class="checklist-title-wrap">
+              <span>🧴</span>
+              <h3>Skin Health Daily Checklist</h3>
+            </div>
+            <span class="checklist-badge">Glass Skin Protocol</span>
+          </div>
+
+          <div class="section-progress-container">
+            <div class="section-progress-track">
+              <div class="section-progress-fill" id="skin-progress-fill"></div>
+            </div>
+            <div class="section-progress-label">
+              <span>Progress Tracker</span>
+              <span id="skin-progress-label">0% Completed (0/7)</span>
+            </div>
+          </div>
+
+          <div class="checklist-items-list" id="skin-checklist-container">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+        <!-- Harmful Skincare Ingredients -->
+        <div class="looks-card">
+          <div class="card-header-styled">
+            <div class="card-header-icon">⚠️</div>
+            <div>
+              <h3 class="card-header-title">Toxic Skincare Chemicals to Avoid</h3>
+              <span class="card-subtitle">Keep facial skin calm and non-inflamed</span>
+            </div>
+          </div>
+          <div class="dust-protection-box" style="background: #fff5f5; border-color: #fed7d7;">
+            <div class="dust-item" style="color: #9b2c2c;">
+              <span>❌</span>
+              <div><strong>Alcohol Denat / SD Alcohol:</strong> Dries the stratum corneum, creating micro-tears that trigger excess compensatory oil production.</div>
+            </div>
+            <div class="dust-item" style="color: #9b2c2c;">
+              <span>❌</span>
+              <div><strong>Crushed Walnut / Apricot Physical Scrubs:</strong> Jagged microscopic edges cause micro-tears and permanent broken capillaries.</div>
+            </div>
+            <div class="dust-item" style="color: #9b2c2c;">
+              <span>❌</span>
+              <div><strong>Heavy Comedogenic Oils (Coconut Oil on Face):</strong> Highly comedogenic rating of 4/5; will plug sebaceous pores into cystic acne.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: NAILS (Precision Grooming for Men)
+       ========================================================================== -->
+  <section class="looks-section" id="section-nails">
+    <div class="section-badge-header">
+      <div class="section-num-tag"><span>03</span> SEGMENT: PRECISION NAIL GROOMING & HYGIENE</div>
+      <h2 class="section-main-title">The Complete Men's Nail Care Protocol</h2>
+      <p class="section-desc">
+        Hands and fingernails are the first physical detail people notice in close interactions. Jagged edges, dirty undersides, or bitten cuticles ruin an otherwise sharp appearance.
+      </p>
+    </div>
+
+    <!-- 3D Anime Style Pictorial Infographic Card (Nails & Dental) -->
+    <div class="pictorial-hero-card">
+      <div class="pictorial-image-wrap zoomable-img-trigger" data-img-src="assets/nails_teeth_guide.jpg" title="Click to expand pictorial infographic">
+        <img src="assets/nails_teeth_guide.jpg" alt="3D Anime Style Pictorial Infographic of Men Nail and Dental Routine">
+        <div class="pictorial-badge-overlay">
+          <span>🎨</span> 3D Anime Pictorial Guide: Precision Nail Care • Dental & Mewing Posture
+        </div>
+        <div class="pictorial-zoom-prompt">
+          <span>🔍</span> Click to Enlarge
+        </div>
+      </div>
+      <div class="pictorial-footer">
+        <span class="pictorial-caption">Pictorial Infographic: 1 Precision Clipper • 2 Glass File Shaping • 3 Cuticle Care • 4 Electric Brushing 45° • 5 Flossing • 6 Copper Tongue Scraper • Jawline Mewing</span>
+        <button class="icon-btn zoomable-img-trigger" data-img-src="assets/nails_teeth_guide.jpg" title="Zoom">🔍</button>
+      </div>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Nail Rules & Care Steps -->
+      <div class="looks-card card-span-7">
+        <div class="card-header-styled">
+          <div class="card-header-icon">💅</div>
+          <div>
+            <h3 class="card-header-title">The 5 Rules of Flawless Male Nails</h3>
+            <span class="card-subtitle">Maintain clean, masculine, manicured hands</span>
+          </div>
+        </div>
+
+        <div class="step-cards-list">
+          <div class="step-item-card">
+            <div class="step-badge-num">1</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Cut Straight Across with Stainless Steel Clippers</h4>
+                <span class="step-tag-pill">Leave 1mm White Margin</span>
+              </div>
+              <p class="step-desc">
+                Never round deeply into the nail corners with clippers. Cutting too low at the edges causes painful ingrown nails and bacterial paronychia. Cut straight across, leaving a clean 1mm white smile line.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">2</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Use a Czech Crystal Glass Nail File</h4>
+                <span class="step-tag-pill">One-Way Strokes Only</span>
+              </div>
+              <p class="step-desc">
+                Throw away cheap emery boards. Glass files have microscopic etched teeth that fuse the keratin layers of the nail together as you file. Always file in <strong>one single direction</strong> (corner to center). Never saw back and forth!
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">3</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Push Back Cuticles Gently After Shower</h4>
+                <span class="step-tag-pill">Never Cut Live Tissue</span>
+              </div>
+              <p class="step-desc">
+                Warm water softens the eponychium cuticle seal. Use an orange wood stick or rubber hoof pusher to gently nudge cuticles back toward the base. This elongates the nail bed and looks clean and professional.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">4</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Daily Under-Nail Scrubbing</h4>
+                <span class="step-tag-pill">Dedicated Soft Brush</span>
+              </div>
+              <p class="step-desc">
+                Keep a natural bristle nail brush by your sink. Scrub under the free edge for 5 seconds when washing hands. Dark grime under fingernails is an instant turn-off.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">5</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Cold-Pressed Jojoba & Vitamin E Cuticle Oil</h4>
+                <span class="step-tag-pill">Daily Night Drops</span>
+              </div>
+              <p class="step-desc">
+                Jojoba oil molecules are small enough to penetrate human keratin. Massaging a drop into the nail matrix prevents hangnails, brittle splitting, and ridges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nail Checklist & Diet -->
+      <div class="card-span-5" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Interactive Nail Checklist -->
+        <div class="checklist-wrapper">
+          <div class="checklist-header">
+            <div class="checklist-title-wrap">
+              <span>💅</span>
+              <h3>Nail Care Daily Checklist</h3>
+            </div>
+            <span class="checklist-badge">Precision Hand Protocol</span>
+          </div>
+
+          <div class="section-progress-container">
+            <div class="section-progress-track">
+              <div class="section-progress-fill" id="nails-progress-fill"></div>
+            </div>
+            <div class="section-progress-label">
+              <span>Progress Tracker</span>
+              <span id="nails-progress-label">0% Completed (0/5)</span>
+            </div>
+          </div>
+
+          <div class="checklist-items-list" id="nails-checklist-container">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+        <!-- Bad Habits to Eliminate -->
+        <div class="looks-card">
+          <div class="card-header-styled">
+            <div class="card-header-icon">🚫</div>
+            <div>
+              <h3 class="card-header-title">Bad Habits That Destroy Nails</h3>
+              <span class="card-subtitle">Break these subconscious behaviors</span>
+            </div>
+          </div>
+          <div class="dust-protection-box" style="background: #fff5f5; border-color: #fed7d7;">
+            <div class="dust-item" style="color: #9b2c2c;">
+              <span>🦷</span>
+              <div><strong>Nail Biting (Onychophagia):</strong> Transmits saliva bacteria into open nail beds, deforms the nail plate permanently, and erodes front tooth enamel.</div>
+            </div>
+            <div class="dust-item" style="color: #9b2c2c;">
+              <span>✂️</span>
+              <div><strong>Ripping Hangnails:</strong> Never pull hangnails with teeth or fingers; it rips live dermis downward. Clip cleanly at the base with a sterilized cuticle nipper.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: TEETH & ORAL LOOKSMAXXING (Mewing & Smile)
+       ========================================================================== -->
+  <section class="looks-section" id="section-teeth">
+    <div class="section-badge-header">
+      <div class="section-num-tag"><span>04</span> SEGMENT: ORAL HYGIENE & CRANIOFACIAL ARCHITECTURE</div>
+      <h2 class="section-main-title">Teeth, Tongue & Craniofacial Looksmaxxing</h2>
+      <p class="section-desc">
+        Your smile and jawline are connected. Learn proper brushing angles, copper tongue scraping, enamel remineralization with nano-hydroxyapatite, and 24/7 mewing tongue posture to maximize maxilla forward growth.
+      </p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Oral Routine & Science -->
+      <div class="looks-card card-span-7">
+        <div class="card-header-styled">
+          <div class="card-header-icon">🪥</div>
+          <div>
+            <h3 class="card-header-title">The Complete Oral Aesthetics Protocol</h3>
+            <span class="card-subtitle">Whiter teeth, zero bad breath, and chiseled bone alignment</span>
+          </div>
+        </div>
+
+        <div class="step-cards-list">
+          <div class="step-item-card">
+            <div class="step-badge-num">1</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">The 45-Degree Modified Bass Brushing Technique</h4>
+                <span class="step-tag-pill">2 Full Minutes</span>
+              </div>
+              <p class="step-desc">
+                Angle your soft-bristle brush at 45 degrees towards the gumline. Use gentle vibratory circular strokes. This sweeps plaque out of the gingival sulcus pocket where bacteria hide, preventing gum recession.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">2</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Medical-Grade Copper Tongue Scraper</h4>
+                <span class="step-tag-pill">Every Morning</span>
+              </div>
+              <p class="step-desc">
+                Toothbrushes only smear tongue debris. Copper has natural oligodynamic antimicrobial properties. Gently scrape from the far back base of the tongue forward 5–7 times. Eliminates volatile sulfur compounds responsible for 90% of halitosis.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">3</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Nano-Hydroxyapatite (nHAp) Remineralization</h4>
+                <span class="step-tag-pill">Enamel Reconstruction</span>
+              </div>
+              <p class="step-desc">
+                Natural enamel is 97% hydroxyapatite. Switch to a 10% nano-hydroxyapatite toothpaste. Nano-particles fill in microscopic dental fissures, reverse early demineralization, and whiten teeth organically without sensitivity.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">4</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Mewing & Craniofacial Tongue Posture</h4>
+                <span class="step-tag-pill">24/7 Palatal Suction</span>
+              </div>
+              <p class="step-desc">
+                Rest your <strong>entire tongue</strong> (including the posterior third) flat against the roof of your mouth, just behind your front teeth without touching them. Keep molars lightly in contact, lips sealed. Over time, this constant upward pressure supports the maxilla, promotes zygomatic projection, and sharpens the jawline.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item-card">
+            <div class="step-badge-num">5</div>
+            <div class="step-content-body">
+              <div class="step-title-row">
+                <h4 class="step-title">Nasal Breathing & Mouth Taping at Night</h4>
+                <span class="step-tag-pill">Airway & Jawline Health</span>
+              </div>
+              <p class="step-desc">
+                Mouth breathing elongates the midface, causes a recessed chin, dark under-eye circles, and dry-mouth dental decay. Use gentle hypoallergenic mouth tape during sleep to force nasal breathing, boosting nitric oxide and keeping teeth bathed in protective saliva.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teeth Checklist & Comparison -->
+      <div class="card-span-5" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Interactive Teeth Checklist -->
+        <div class="checklist-wrapper">
+          <div class="checklist-header">
+            <div class="checklist-title-wrap">
+              <span>🪥</span>
+              <h3>Oral & Jawline Daily Checklist</h3>
+            </div>
+            <span class="checklist-badge">Pearly White & Chiseled</span>
+          </div>
+
+          <div class="section-progress-container">
+            <div class="section-progress-track">
+              <div class="section-progress-fill" id="teeth-progress-fill"></div>
+            </div>
+            <div class="section-progress-label">
+              <span>Progress Tracker</span>
+              <span id="teeth-progress-label">0% Completed (0/6)</span>
+            </div>
+          </div>
+
+          <div class="checklist-items-list" id="teeth-checklist-container">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+        <!-- Mouth vs Nasal Breathing Guide -->
+        <div class="looks-card">
+          <div class="card-header-styled">
+            <div class="card-header-icon">👃</div>
+            <div>
+              <h3 class="card-header-title">Mouth Breathing vs. Nasal Breathing</h3>
+              <span class="card-subtitle">The biological impact on facial aesthetics</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+            <div style="background: #fff1f2; border: 1px solid #fecdd3; padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.84rem; color: #9f1239;">
+              <strong>❌ Mouth Breathing:</strong> Receded chin, downwards facial growth, narrow dental arch, crowded crooked teeth, snoring, poor oxygenation.
+            </div>
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.84rem; color: #166534;">
+              <strong>✅ Nasal Breathing + Mewing:</strong> Prominent cheekbones, forward maxilla, wide dental arch, chiseled submental neck line, optimal nitric oxide uptake.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: AND SOME MORE (Jawline, Posture, Scent & Biohacking)
+       ========================================================================== -->
+  <section class="looks-section" id="section-jawline">
+    <div class="section-badge-header">
+      <div class="section-num-tag"><span>05</span> SEGMENT: JAWLINE, POSTURE, SCENT & BIOHACKING</div>
+      <h2 class="section-main-title">Bonus Aesthetics: The Finishing Touches</h2>
+      <p class="section-desc">
+        Complete your transformation with neck posture correction, jawline hypertrophy, signature cologne longevity, and sleep biohacking.
+      </p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Jawline & Posture -->
+      <div class="looks-card card-span-4">
+        <div class="card-header-styled">
+          <div class="card-header-icon">📐</div>
+          <div>
+            <h3 class="card-header-title">Neck Posture & Chin Tucks</h3>
+            <span class="card-subtitle">Reverse tech-neck immediately</span>
+          </div>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Forward head posture pushes the lower jaw backwards, instantly creating the illusion of a double chin and weak jawline even at low body fat.
+        </p>
+        <div class="step-cards-list">
+          <div class="dust-item">
+            <span>🔹</span>
+            <div><strong>Chin Tucks:</strong> Pull your head straight back as if making a double chin. Hold for 5 seconds. Repeat 15 times, 3x daily to strengthen deep cervical flexors.</div>
+          </div>
+          <div class="dust-item">
+            <span>🔹</span>
+            <div><strong>Wall Angels:</strong> Stand flat against a wall, pressing your lower back, shoulders, and back of head against it. Slide arms up into a 'W' then 'Y' shape.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature Scent -->
+      <div class="looks-card card-span-4">
+        <div class="card-header-styled">
+          <div class="card-header-icon">🪵</div>
+          <div>
+            <h3 class="card-header-title">Signature Scent Architecture</h3>
+            <span class="card-subtitle">Pulse point science & longevity</span>
+          </div>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Smelling magnetic is an invisible looksmaxxing amplifier. Choose Eau de Parfum (EDP) or Extrait (15–25% oil concentration).
+        </p>
+        <div class="step-cards-list">
+          <div class="dust-item">
+            <span>📍</span>
+            <div><strong>Pulse Points:</strong> Spray on the carotid arteries (sides of neck) and inner wrists. Heat naturally projects the fragrance.</div>
+          </div>
+          <div class="dust-item">
+            <span>🛑</span>
+            <div><strong>NEVER Rub Wrists:</strong> Rubbing generates friction heat that crushes delicate top notes (citrus, bergamot), ruining scent progression.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus Checklist -->
+      <div class="card-span-4">
+        <div class="checklist-wrapper">
+          <div class="checklist-header">
+            <div class="checklist-title-wrap">
+              <span>⭐</span>
+              <h3>Biohacking Checklist</h3>
+            </div>
+            <span class="checklist-badge">Posture & Scent</span>
+          </div>
+
+          <div class="section-progress-container">
+            <div class="section-progress-track">
+              <div class="section-progress-fill" id="bonus-progress-fill"></div>
+            </div>
+            <div class="section-progress-label">
+              <span>Progress Tracker</span>
+              <span id="bonus-progress-label">0% Completed (0/4)</span>
+            </div>
+          </div>
+
+          <div class="checklist-items-list" id="bonus-checklist-container">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MASTER LOOKSMAXXING AUDIT & ASCENSION CALCULATOR
+       ========================================================================== -->
+  <section class="calculator-section" id="section-calculator">
+    <div class="calc-card">
+      <div class="calc-grid">
+        <div class="calc-info">
+          <div class="hero-tag">🏆 Ascendance Audit</div>
+          <h2 style="font-size: 2rem; font-weight: 900; margin-bottom: 1rem; color: var(--text-primary);">
+            Your Looksmaxxing Ascension Score
+          </h2>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            This master audit automatically recalculates your aesthetic tier as you check off habits in <strong>Hair, Skin, Nails, Teeth, and Biohacking</strong>. Maintain these habits consistently for 90 days to achieve full biological remodeling!
+          </p>
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <a href="#section-hair" class="viewport-btn" style="padding: 8px 16px; text-decoration: none;">Review Hair ✂️</a>
+            <a href="#section-skin" class="viewport-btn" style="padding: 8px 16px; text-decoration: none;">Review Skin 🧴</a>
+            <a href="#section-nails" class="viewport-btn" style="padding: 8px 16px; text-decoration: none;">Review Nails 💅</a>
+            <a href="#section-teeth" class="viewport-btn" style="padding: 8px 16px; text-decoration: none;">Review Teeth 🪥</a>
+          </div>
+        </div>
+
+        <div class="calc-tier-display">
+          <div class="tier-trophy-icon" id="calc-trophy-icon">🌱</div>
+          <div class="tier-score-number" id="calc-score-number">0%</div>
+          <div class="tier-title-badge" id="calc-tier-badge">Novice Looksmaxxer</div>
+          <p class="tier-assessment-text" id="calc-assessment-text">
+            You have begun your transformation. Follow the hair and skincare protocols daily to see immediate vitality gains!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FLOATING CORNER 3D PENGUIN MASCOT WIDGET
+       ========================================================================== -->
+  <div class="floating-penguin-widget">
+    <div class="floating-speech-pop" id="floating-speech-pop">
+      Tip: Remember to massage shampoo using only the pads of your fingers!
+    </div>
+    <div class="floating-penguin-bubble" id="floating-penguin-btn" title="Click to view 3D Penguin Mascot">
+      <img src="assets/penguin_mascot.jpg" alt="Pip the Penguin">
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL FOR INFOGRAPHICS
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightbox-close">✕</button>
+      <img id="lightbox-img" src="" alt="Enlarged Infographic">
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-copy">
+        <strong>MEN HEALTH AND LOOKSMAXXING</strong> • Evidence-Based Grooming & Craniofacial Aesthetics.
+      </div>
+      <div class="footer-badges">
+        <span class="footer-pill">Light Blue & Vibrant Theme</span>
+        <span class="footer-pill">3D Penguin Engine v1.0</span>
+        <span class="footer-pill">Local Offline Ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="penguin3d.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
