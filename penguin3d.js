@@ -147,6 +147,40 @@ class Penguin3D {
       this.isDragging = false;
     });
 
+    // Touch Events for Mobile / Tablet 3D Mascot interaction
+    this.canvas.style.touchAction = 'none';
+
+    this.canvas.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) {
+        this.isDragging = true;
+        const rect = this.canvas.getBoundingClientRect();
+        this.lastMouseX = e.touches[0].clientX - rect.left;
+        this.lastMouseY = e.touches[0].clientY - rect.top;
+      }
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!this.isDragging || e.touches.length !== 1) return;
+      const rect = this.canvas.getBoundingClientRect();
+      const touchX = e.touches[0].clientX - rect.left;
+      const touchY = e.touches[0].clientY - rect.top;
+
+      const deltaX = touchX - this.lastMouseX;
+      const deltaY = touchY - this.lastMouseY;
+      this.targetRotY += deltaX * 0.02;
+      this.targetRotX = Math.max(-0.4, Math.min(0.4, this.targetRotX + deltaY * 0.02));
+      this.lastMouseX = touchX;
+      this.lastMouseY = touchY;
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => {
+      this.isDragging = false;
+    });
+
+    window.addEventListener('touchcancel', () => {
+      this.isDragging = false;
+    });
+
     // Click to react
     this.canvas.addEventListener('click', () => {
       this.triggerReaction();

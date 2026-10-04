@@ -1684,15 +1684,91 @@ body {
   }
 }
 
+/* Mobile Quick Navigation Strip */
+.mobile-quick-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .top-navbar {
-    padding: 0.7rem 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+  .nav-container {
+    gap: 8px;
+  }
+  .brand-text h1 {
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+  }
+  .brand-badge {
+    display: none;
   }
   .nav-links {
-    display: none; /* Can be toggled or condensed */
+    display: none;
+  }
+  .user-info-text {
+    display: none;
+  }
+  .user-profile-header {
+    padding: 2px;
+  }
+  .user-avatar-wrap {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Sticky Horizontal Mobile Quick Navigation */
+  .mobile-quick-nav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 8px 12px;
+    background: rgba(10, 15, 29, 0.95);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 50px;
+    z-index: 40;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-quick-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .quick-pill {
+    padding: 5px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease;
+  }
+  .quick-pill:hover, .quick-pill:active {
+    background: rgba(59, 130, 246, 0.3);
+    border-color: #3b82f6;
+    color: #fff;
+  }
+
+  .hero-section {
+    padding: 1rem 0.8rem;
   }
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  .penguin-viewport-card {
+    height: 340px;
   }
   .hair-types-grid, .nutrients-food-grid, .product-guide-grid {
     grid-template-columns: 1fr;

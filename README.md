@@ -1,8 +1,14 @@
 # ⚡ Men's Health & Looksmaxxing Ascension Portal
 
+[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://saltymother.github.io/men-health-looksmaxxing/)
+[![Status](https://img.shields.io/badge/Status-Deployed%20%26%20Verified-success?style=for-the-badge)](https://saltymother.github.io/men-health-looksmaxxing/)
+
+> 🌐 **Live Web Application**: [https://saltymother.github.io/men-health-looksmaxxing/](https://saltymother.github.io/men-health-looksmaxxing/)  
+> 📱 *Fully responsive for desktop workstations, iPads, and mobile smartphones with touch 3D mascot rotation and sticky mobile quick-nav!*
+
 A web application and interactive guide for male grooming, hair restoration, barrier skincare, precision nail care, and craniofacial mewing architecture.
 
-![Light Blue & Vibrant Theme](assets/hair_guide.jpg)
+---
 
 ## 🌟 Features
 

@@ -18,3 +18,15 @@
   - Implemented interactive 3D Penguin mascot viewer utilizing Three.js with orbit controls and lighting shaders.
   - Built responsive pictorial infographic overlays with interactive modal zooming.
   - Added `.nojekyll` and GitHub Actions automated deployment workflow (`.github/workflows/deploy.yml`).
+
+## [v1.1.0] - 2026-10-04
+- **Commit:** Pending Signed Commit
+- **Author:** saltymother <saltymother@users.noreply.github.com>
+- **Type:** Feature | Mobile Responsiveness & 3D Touch Interaction
+- **Status:** Deployed & Verified
+- **GitHub Pages:** https://saltymother.github.io/men-health-looksmaxxing/
+- **Summary:**
+  - Added full multi-touch drag, momentum, and reaction support for 3D Mascot Pip in `penguin3d.js` with `touch-action: none`.
+  - Implemented sticky horizontal quick-jump navigation bar on mobile for instantaneous section access.
+  - Optimized responsive navbar avoiding header cramping on narrow smartphones and portrait displays.
+  - Refined bento card and hero layout scaling for mobile screens.
